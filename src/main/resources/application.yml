@@ -1,0 +1,15 @@
+spring:
+  #数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sh-cynosdbmysql-grp-0dcc3z0c.sql.tencentcdb.com:25445/ffisher
+    username: root
+    password: Zxy20031116..
+mybatis:
+  #数据库
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
